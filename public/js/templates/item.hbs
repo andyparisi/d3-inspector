@@ -1,0 +1,67 @@
+<div class="image bg-{{displayColor}}">
+  <img src="http://media.blizzard.com/d3/icons/items/large/{{icon}}.png">
+</div>
+
+<div class="specs">
+  <h1 class="quality-{{displayColor}}">{{name}}</h1>
+  {{#if uiSlot}}
+    <div class="slot">{{uiSlot}}</div>
+  {{/if}}
+  <div class="type quality-{{displayColor}}">{{typeName}}</div>
+  <div class="value">{{uiValue}}</div>
+  {{#if uiValueType}}
+    <div class="valueType gray">{{uiValueType}}</div>
+  {{/if}}
+  {{#if uiAPS}}
+    <div class="speedblock"><span>{{uiAPS}}</span> Attacks Per Second</div>
+  {{/if}}
+
+  {{#if uiBlockChance}}
+    <div class="speedblock"><span>{{uiBlockChance}}</span> Chance to Block</div>
+  {{/if}}
+
+  {{#if uiBlockAmount}}
+    <div class="speedblock"><span>{{uiBlockAmount}}</span> Block Amount</div>
+  {{/if}}
+</div>
+
+<div class="attrs">
+  {{#if uiAttrPrimary}}
+    <h2 class="attr-category">Primary</h2>
+    <ul class="attributes">
+      {{#each uiAttrPrimary}}
+        <li class="attr quality-{{color}}">{{{text}}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+  {{#if uiAttrSecondary}}
+    <h2 class="attr-category">Secondary</h2>
+    <ul class="attributes">
+      {{#each uiAttrSecondary}}
+        <li class="attr quality-{{color}}">{{{text}}}</li>
+      {{/each}}
+      {{#if uiAttrPassive}}
+        {{#each uiAttrPassive}}
+          <li class="attr quality-{{color}}">{{{text}}}</li>
+        {{/each}}
+      {{/if}}
+    </ul>
+  {{/if}}
+  {{#if uiGems}}
+    <ul class="gems">
+      {{#each uiGems}}
+        <li><img class="gem" src="http://media.blizzard.com/d3/icons/items/small/{{icon}}.png"><img class="bullet" src="/img/bullet.gif">{{text}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+</div>
+
+{{#if requiredLevel}}
+  <div class="reqlevel">Required Level: <span>{{requiredLevel}}</span></div>
+{{/if}}
+
+{{#if flavorText}}
+  <div class="flavor">
+    {{flavorText}}
+  </div>
+{{/if}}

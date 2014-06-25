@@ -1,0 +1,6 @@
+<h2 class="hero-nameplate">{{name}}</h2>
+<div class="hero-gear">
+  {{#each items}}
+    <div class="gear-{{key}} bg-{{displayColor}}" data-slot="{{key}}" data-tooltip="{{tooltipParams}}"><img src="http://media.blizzard.com/d3/icons/items/large/{{icon}}.png"></div>
+  {{/each}}
+</div>
