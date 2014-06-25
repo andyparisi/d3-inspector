@@ -1,0 +1,14 @@
+{
+  "name": "D3-hero",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": "~1.11",
+    "backbone": "*",
+    "underscore": "*",
+    "requirejs": "*",
+    "backbone.marionette": "*",
+    "handlebars": "*",
+    "moment": "*",
+    "hbs": "*"
+  }
+}
