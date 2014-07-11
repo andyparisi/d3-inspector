@@ -11,6 +11,6 @@ define (require) ->
 
     setStrings: =>
       # Fix the class names
-      for hero in @get('heroes')
-        @get('heroes')[_i].uiClass = hero.class.replace('-', ' ')
+      for hero, index in @get('heroes')
+        @get('heroes')[index].uiClass = hero.class.replace('-', ' ')
 
