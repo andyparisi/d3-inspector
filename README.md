@@ -1,4 +1,3 @@
-d3-inspector
-============
+A handy little D3 Hero inspector app :)
 
-Hero inspector for Diablo 3
+Available online: http://d3-coldcoffee.rhcloud.com
