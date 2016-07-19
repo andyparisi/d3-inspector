@@ -1,3 +1,1 @@
-A handy little D3 Hero inspector app :)
-
-Available online: http://d3-coldcoffee.rhcloud.com
+A handy little D3 Hero inspector app .. may not work due to outdated external APIs
